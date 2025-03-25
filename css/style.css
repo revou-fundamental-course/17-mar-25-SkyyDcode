@@ -190,13 +190,13 @@
     transition: all 0.3s ease;
   }
   
-  #button1 {
+  .btn-luas {
     background: var(--primary-color);
     color: white;
     box-shadow: var(--box-shadow);
   }
   
-  #button1:hover {
+  .btn-luas:hover {
     background: var(--secondary-color);
     transform: translateY(-2px);
   }
@@ -335,7 +335,7 @@
     font-size: 1rem;
   }
   
-  .calculate-btn {
+  #btnHitungLuas {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -347,23 +347,48 @@
     min-width: 100px;
   }
   
-  .calculate-btn:hover {
+  #btnHitungLuas:hover {
     background-color: var(--secondary-color);
   }
   
-  .result {
+  .btnHitungKeliling{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px;
+  }
+
+  .btnHitungKeliling:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .hasil-luas {
     margin-top: var(--spacing-md);
     background-color: var(--light-gray);
     padding: var(--spacing-md);
     border-radius: var(--border-radius-md);
-    text-align: center;
     min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   
-  .result p {
+  .hasil-luas p {
+    color: var(--gray-color);
+    font-style: italic;
+  }
+
+  .hasil-keliling {
+    margin-top: var(--spacing-md);
+    background-color: var(--light-gray);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    min-height: 60px;
+  }
+  
+  .hasil-keliling p {
     color: var(--gray-color);
     font-style: italic;
   }

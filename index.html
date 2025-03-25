@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- javascript -->
+     <script src="./js/script.js"></script>
     <!-- Add Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,8 +60,12 @@
             </div>
             <!-- header-button -->
             <div class="header-button">
-              <button id="button1">Hitung Luas Persegi</button>
-              <button id="button2">Hitung Keliling Persegi</button>
+              <a href="#luasPersegi">
+                <button class="btn-luas">Hitung Luas Persegi</button>
+              </a>
+              <a href="#kelilingPersegi">
+                <button id="button2">Hitung Keliling Persegi</button>
+              </a>
             </div>
           </div>
         </div>
@@ -74,39 +80,41 @@
           <div class="underline"></div>
         </div>
         <div class="main-wrapper">
-          <div class="formula-card">
+          <div class="formula-card" id="luasPersegi">
             <div class="card-image">
-              <img src="assets/persegi.jpg" alt="Persegi - Luas" />
+                <img src="assets/persegi.jpg" alt="Persegi - Luas" />
             </div>
             <div class="card-content">
-              <h2>Rumus Luas Persegi</h2>
-              <div class="formula-description">
-                <p>Rumus Luas Persegi Yaitu:</p>
-              </div>
-              <div class="formula-box">
-                <div class="formula-variables">
-                  <p>Dimana:</p>
-                  <p>L = Luas</p>
-                  <p>s = Sisi</p>
+                <h2>Rumus Luas Persegi</h2>
+                <div class="formula-description">
+                    <p>Rumus Luas Persegi Yaitu:</p>
                 </div>
-                <div class="formula-equation">
-                  <p>L = s × s</p>
+                <div class="formula-box">
+                    <div class="formula-variables">
+                        <p>Dimana:</p>
+                        <p>L = Luas</p>
+                        <p>s = Sisi</p>
+                    </div>
+                    <div class="formula-equation">
+                        <p>L = s × s</p>
+                    </div>
                 </div>
-              </div>
-              <div class="calculator-form">
-                <label for="sisiLuas">Panjang sisi (cm):</label>
-                <div class="input-group">
-                  <input type="text" id="sisiLuas" placeholder="Masukkan panjang sisi">
-                  <button class="calculate-btn">Hitung</button>
+                <div class="calculator-form">
+                    <label for="sisiLuas">Panjang sisi (cm):</label>
+                    <div class="input-group">
+                        <input type="text" id="sisiLuas" placeholder="Masukkan panjang sisi">
+                        <button id="btnHitungLuas" onclick="hitungLuas()">Hitung</button>
+                    </div>
+                    <div class="hasil-luas">
+                        <p>L = S x S</p>
+                        <p id="luas"></p>
+                        <p id="hasil-luas"></p>
+                    </div>
                 </div>
-                <div class="result">
-                  <p>Hasil akan ditampilkan di sini</p>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
           
-          <div class="formula-card">
+          <div class="formula-card" id="kelilingPersegi">
             <div class="card-image">
               <img src="assets/persegi.jpg" alt="Persegi - Keliling" />
             </div>
@@ -129,10 +137,12 @@
                 <label for="sisiKeliling">Panjang sisi (cm):</label>
                 <div class="input-group">
                   <input type="text" id="sisiKeliling" placeholder="Masukkan panjang sisi">
-                  <button class="calculate-btn">Hitung</button>
+                  <button class="btnHitungKeliling" onclick="hitungKeliling()">Hitung</button>
                 </div>
-                <div class="result">
-                  <p>Hasil akan ditampilkan di sini</p>
+                <div class="hasil-keliling">
+                  <p>K = 4 x S</p>
+                  <p id="keliling"></p>
+                  <p id="hasil-keliling"></p>
                 </div>
               </div>
             </div>
