@@ -93,7 +93,7 @@
   }
   
   .nav-title span {
-    color: var(--secondary-color);
+    color: red;
   }
   
   .nav-menu ul {
@@ -151,7 +151,7 @@
   .header-welcome h3 {
     font-weight: 600;
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: red;
     margin-bottom: var(--spacing-sm);
   }
   
